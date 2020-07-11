@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  
+    <div class="stopwatch">
+    <div class="results">
+        <span id="m">00</span>
+          <span>:</span>
+        <span id="s">00</span>
+          <span>:</span>
+        <span id="ms">00</span>
+    </div>
+    <div class="bttn">
+        <button onclick="reset()"><i><img class="rest" src="images/Reset.png" alt="" ></i></button>
+        <button id="strtbttn" onclick="start()" ><i><img class="play" src="images/playbtn.png" alt="" ></i></button>
+        <button onclick="stop()"><i><img class="stop" src="images/pause-png.png" alt="" ></i></button>
+        <button onclick="setLaps()"><i><img class="lap" src="images/lap.png" alt="" width="20px"></i></button>
+    </div>
+    <div id="laps">
+    </div>
+    </div>
+</div>
+
+
+
+
+
+    
+</body>
+<script src="app.js"></script>
+</html>
